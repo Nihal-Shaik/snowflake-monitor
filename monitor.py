@@ -181,7 +181,7 @@ Return ONLY a valid JSON object — no markdown fences, no extra text:
 
 def summarize(item: dict) -> Optional[dict]:
     genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.0-flash")
     prompt = PROMPT.format(
         title    = item["title"],
         content  = (item.get("content") or "No additional content.")[:2000],
