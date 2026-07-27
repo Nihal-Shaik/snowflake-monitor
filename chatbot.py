@@ -54,7 +54,7 @@ Formatting rules for Telegram Markdown:
 
 def ask_gemini(question: str) -> str:
     genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.0-flash")
     try:
         resp = model.generate_content(f"{SYSTEM}\n\nUser: {question}")
         return resp.text.strip()
