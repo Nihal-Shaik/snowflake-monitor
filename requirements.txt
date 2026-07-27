@@ -1,0 +1,6 @@
+flask>=3.0.0
+requests>=2.31.0
+google-generativeai>=0.7.0
+beautifulsoup4>=4.12.3
+lxml>=5.2.0
+feedparser>=6.0.11
